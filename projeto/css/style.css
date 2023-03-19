@@ -1,57 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
+/* entra as variaveis */
 * {
   box-sizing: border-box !important;
   transition: ease all 0.5s;
@@ -63,7 +10,6 @@ html {
   font-size: 62.5%;
 }
 
-/* entra as variaveis */
 body {
   color: #666666;
   font-size: 14px;
@@ -176,10 +122,6 @@ img {
   height: auto;
 }
 
-.paddind_bottom_0 {
-  padding-bottom: 0 !important;
-}
-
 button {
   border: 0;
   margin: 0;
@@ -190,10 +132,6 @@ button {
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 0px;
-}
-
-.padding_0 {
-  padding: 0px;
 }
 
 .max_large {
@@ -237,7 +175,7 @@ button {
 .custom_menu li {
   float: left;
   font-size: 16px;
-  color: #F1F1F1;
+  color: #1F1F1F;
   padding: 6px 10px 0px 10px;
 }
 
@@ -263,13 +201,9 @@ button {
   transform: skew(-15deg);
 }
 
-.header_section {
+.header_section_top {
   width: 100%;
-  display: flex;
-}
-
-.containt_main {
-  display: flex;
+  display: inline-block;
 }
 
 .padding_10 {
@@ -316,7 +250,7 @@ a:hover {
 }
 
 .buynow_bt a:hover {
-  background-color: #f26522;
+  background-color: #F26522;
   color: #FFFFFF;
 }
 
@@ -332,14 +266,14 @@ a:hover {
   color: #9E0116;
   text-align: center;
   font-weight: bold;
-  -webkit-text-stroke: 2px #666666;
+  -webkit-text-stroke: 1px #666666;
 }
 
 .fashion_favorito:hover {
   color: #FFFFFF;
 }
 
-.fashion_section_2 {
+.fashion_section_two {
   width: 100%;
   margin-top: 30px;
 }
@@ -355,14 +289,17 @@ a:hover {
 
 .box_main_sh1:hover {
   box-shadow: 0px 0 20px 5px #aed6f1;
+  border: 1px solid #aed6f1;
 }
 
 .box_main_sh2:hover {
   box-shadow: 0px 0 20px 5px #f7dc6f;
+  border: 1px solid #f7dc6f;
 }
 
 .box_main_sh3:hover {
   box-shadow: 0px 0 20px 5px #f8c47a;
+  border: 1px solid #f8c47a;
 }
 
 .star_dr {
@@ -473,7 +410,7 @@ a:hover {
   margin: 0 auto;
   text-align: center;
   display: flex;
-  border-bottom: 1px solid #FFFFFF !important;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 .footer_menu {
@@ -497,7 +434,7 @@ a:hover {
 }
 
 .footer_menu li a {
-  color: #F1F1F1;
+  color: #FFFFFF;
 }
 
 .footer_menu li a:hover {
@@ -552,6 +489,171 @@ a:hover {
 
 .margin_top90 {
   margin-top: 90px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner_ini_bg_main {
+    background-size: 100% 100%;
+  }
+  .tshirt_img {
+    margin: 20px 0px;
+    min-height: 360px;
+  }
+  .electronic_img {
+    margin: 20px 0px;
+    min-height: 280px;
+  }
+  .jewellery_img {
+    margin: 20px 0px;
+    min-height: 0;
+  }
+  .line {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner_ini_bg_main {
+    background-size: 100% 100%;
+  }
+  .layout_padding {
+    padding-top: 50px !important;
+  }
+  .buynow_bt {
+    width: 160px !important;
+    font-size: 14px !important;
+  }
+  .tshirt_img {
+    margin: 20px 0px !important;
+    min-height: 320px !important;
+  }
+  .banner_favorito {
+    font-size: 3rem !important;
+  }
+  .electronic_img {
+    margin: 20px 0px !important;
+    min-height: 190px !important;
+  }
+  .jewellery_img {
+    margin: 20px 0px !important;
+    min-height: 0 !important;
+  }
+  .line {
+    width: 100% !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner_ini_bg_main {
+    background-size: 100% 100%;
+  }
+  .header_section_top {
+    display: none !important;
+  }
+  .layout_padding {
+    padding-top: 40px !important;
+  }
+  .buynow_bt {
+    width: 160px !important;
+    font-size: 14px !important;
+  }
+  .banner_favorito {
+    font-size: 40px !important;
+  }
+  .fashion_favorito {
+    font-size: 24px !important;
+  }
+  .fashion_section {
+    padding-bottom: 100px !important;
+  }
+  .electronic_img {
+    margin: 20px 0px !important;
+    min-height: 145px !important;
+  }
+  .tshirt_img {
+    margin: 20px 0px !important;
+    min-height: 246px !important;
+  }
+  .jewellery_img {
+    margin: 20px 0px !important;
+    min-height: 0 !important;
+  }
+  .shirt_text {
+    font-size: 14px !important;
+  }
+  .price_text {
+    font-size: 14px !important;
+  }
+  .buy_bt a {
+    font-size: 12px !important;
+  }
+  .seemore_bt a {
+    font-size: 12px !important;
+  }
+  .line {
+    width: 100% !important;
+  }
+  .footer_menu li {
+    float: none !important;
+    padding: 10px 10px 0px 10px !important;
+    display: block !important;
+  }
+  .location_main {
+    padding: 30px 0px 30px 0px !important;
+  }
+}
+@media (max-width: 575px) {
+  .banner_ini_bg_main {
+    background-size: 100% 70% !important;
+  }
+  .header_section_top {
+    display: none !important;
+  }
+  .logo {
+    width: 20% !important;
+  }
+  .layout_padding {
+    padding-top: 30px !important;
+  }
+  .buynow_bt {
+    width: 120px !important;
+    font-size: 10px !important;
+    padding-top: 1px !important;
+  }
+  .banner_favorito {
+    font-size: 24px;
+  }
+  .fashion_favorito {
+    font-size: 24px;
+    -webkit-text-stroke: 0px !important;
+  }
+  .fashion_favorito:hover {
+    color: #9E0116 !important;
+  }
+  .fashion_section {
+    padding-bottom: 100px;
+  }
+  .electronic_img {
+    margin: 20px 0px;
+    min-height: 0;
+  }
+  .tshirt_img {
+    margin: 20px 0px;
+    min-height: 0;
+  }
+  .jewellery_img {
+    margin: 20px 0px;
+    min-height: 0;
+  }
+  .line {
+    width: 100%;
+  }
+  .footer_menu li {
+    float: none !important;
+    padding: 10px 10px 0px 10px;
+    display: block;
+  }
+  .location_main {
+    padding: 30px 0px 30px 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
